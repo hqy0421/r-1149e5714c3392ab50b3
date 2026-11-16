@@ -18,6 +18,12 @@ from datasketch.lsh_bloom import MinHashLSHBloom
 from datasketch.lshensemble import MinHashLSHEnsemble
 from datasketch.lshforest import MinHashLSHForest
 from datasketch.minhash import MinHash
+from datasketch.tfidf import (
+    NotFittedError,
+    TFIDFMinHashLSHForest,
+    TFIDFWeightedMinHash,
+    TFIDFWeightedMinHashLSHForest,
+)
 from datasketch.weighted_minhash import WeightedMinHash, WeightedMinHashGenerator
 
 # Alias
@@ -35,6 +41,10 @@ __all__ = [
     "MinHashLSHBloom",
     "MinHashLSHEnsemble",
     "MinHashLSHForest",
+    "NotFittedError",
+    "TFIDFMinHashLSHForest",
+    "TFIDFWeightedMinHash",
+    "TFIDFWeightedMinHashLSHForest",
     "WeightedMinHash",
     "WeightedMinHashGenerator",
     "WeightedMinHashLSH",

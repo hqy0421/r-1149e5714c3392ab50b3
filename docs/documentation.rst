@@ -63,6 +63,17 @@ MinHash LSH Forest
     :members:
     :special-members:
 
+TF-IDF Weighted MinHash LSH Forest
+----------------------------------
+
+.. autoclass:: datasketch.TFIDFWeightedMinHashLSHForest
+    :members:
+    :special-members:
+
+.. autoclass:: datasketch.NotFittedError
+    :members:
+    :special-members:
+
 MinHash LSH Ensemble
 --------------------
 

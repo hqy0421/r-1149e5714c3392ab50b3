@@ -42,19 +42,21 @@ This package contains the following data sketches:
 The following indexes for data sketches are provided to support
 sub-linear query time:
 
-+---------------------------+-----------------------------+------------------------+
-| Index                     | For Data Sketch             | Supported Query Type   |
-+===========================+=============================+========================+
-| `MinHash LSH`_            | MinHash, Weighted MinHash   | Jaccard Threshold      |
-+---------------------------+-----------------------------+------------------------+
-| `LSHBloom`_               | MinHash, Weighted MinHash   | Jaccard Threshold      |
-+---------------------------+-----------------------------+------------------------+
-| `MinHash LSH Forest`_     | MinHash, Weighted MinHash   | Jaccard Top-K          |
-+---------------------------+-----------------------------+------------------------+
-| `MinHash LSH Ensemble`_   | MinHash                     | Containment Threshold  |
-+---------------------------+-----------------------------+------------------------+
-| `HNSW`_                   | Any                         | Custom Metric Top-K    |
-+---------------------------+-----------------------------+------------------------+
++---------------------------------------+-----------------------------+------------------------+
+| Index                                 | For Data Sketch             | Supported Query Type   |
++=======================================+=============================+========================+
+| `MinHash LSH`_                        | MinHash, Weighted MinHash   | Jaccard Threshold      |
++---------------------------------------+-----------------------------+------------------------+
+| `LSHBloom`_                           | MinHash, Weighted MinHash   | Jaccard Threshold      |
++---------------------------------------+-----------------------------+------------------------+
+| `MinHash LSH Forest`_                 | MinHash, Weighted MinHash   | Jaccard Top-K          |
++---------------------------------------+-----------------------------+------------------------+
+| `TF-IDF Weighted MinHash LSH Forest`_ | Weighted MinHash            | TF-IDF Jaccard Top-K   |
++---------------------------------------+-----------------------------+------------------------+
+| `MinHash LSH Ensemble`_               | MinHash                     | Containment Threshold  |
++---------------------------------------+-----------------------------+------------------------+
+| `HNSW`_                               | Any                         | Custom Metric Top-K    |
++---------------------------------------+-----------------------------+------------------------+
 
 datasketch must be used with Python 3.9 or above, NumPy 1.11 or above, and Scipy.
 
@@ -96,6 +98,7 @@ To install with Bloom filter dependency:
 .. _`HyperLogLog++`: https://ekzhu.github.io/datasketch/hyperloglog.html#hyperloglog-plusplus
 .. _`MinHash LSH`: https://ekzhu.github.io/datasketch/lsh.html
 .. _`MinHash LSH Forest`: https://ekzhu.github.io/datasketch/lshforest.html
+.. _`TF-IDF Weighted MinHash LSH Forest`: https://ekzhu.github.io/datasketch/tfidf.html
 .. _`MinHash LSH Ensemble`: https://ekzhu.github.io/datasketch/lshensemble.html
 .. _`LSHBloom`: https://ekzhu.github.io/datasketch/lshbloom.html
 .. _`Minhash LSH at Scale`: http://ekzhu.github.io/datasketch/lsh.html#minhash-lsh-at-scale
